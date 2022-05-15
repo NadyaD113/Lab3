@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створення форм за допомогою HTML</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="2" align="center">Магазин одягу </td>
+    </tr>
+    <tr>
+        <td >Ім'я:</td>
+        <td>
+            <form>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" required>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Верхній одяг </td>
+        <td>
+            <form>
+                <label>
+                    <input type="radio" name="question" value="Курточки">
+                    Курточки
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Топи">
+                    Топи
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Світери">
+                    Світери
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Футболки">
+                    Футболки
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Сорочки">
+                    Сорочки
+                </label>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Колір</td>
+        <td> <select>
+            <option value="1">Червоний</option>
+            <option value="2">Чорний/Білий</option>
+            <option value="3">Зелений</option>
+            <option value="4">Фіолетовий</option>
+        </select> </td>
+    </tr>
+    <tr>
+        <td >Бренди</td>
+        <td>
+            <form action="handler.php">
+                <p><input type="checkbox" name="a" > Bershka</p>
+                <p><input type="checkbox" name="a" > H&M</p>
+                <p><input type="checkbox" name="a" > Zara</p>
+                <p><input type="checkbox" name="a" > Pull and Bear</p>
+                <p><input type="checkbox" name="a" > Guess</p>
+                <p><input type="checkbox" name="a" > Colin`s</p>
+                <p><input type="checkbox" name="a" > Goldi</p>
+                <p><input type="checkbox" name="a" > Adidas</p>
+                <p><input type="checkbox" name="a" > Nike</p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> Побажання:
+            <p>
+                <label for="msg"></label>
+                <textarea id="msg" name="user_message"></textarea>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> <button type="submit">Send</button>
+        </td>
+    </tr>
+</body>
+</html>
